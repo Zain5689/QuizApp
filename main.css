@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Tahoma, Arial;
+}
+
+.Quiz-container {
+  background-color: #f8f8f8;
+  padding: 20px;
+  width: 800px;
+  margin: auto;
+}
+
+.Quiz-container .quiz-info {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.Quiz-container .quiz-info .heading {
+  flex: 1;
+}
+.Quiz-container .quiz-info .cont {
+  flex: 1;
+  text-align: right;
+}
+.quiz-area {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.answers-area {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.answers-area .answer {
+  background-color: #f8f8f8;
+  padding: 15px;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+.answers-area .answer input[type="radio"]:checked + label {
+  color: #0075ff;
+}
+.submit-button {
+  background-color: #0075ff;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 20px auto;
+}
+.submit-button :focus {
+  outline: none;
+}
+.bullets {
+  display: flex;
+  border-top: 1px solid #dfdfdf;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 10px;
+}
+
+.bullets .spans {
+  flex: 1;
+  display: flex;
+}
+.bullets .spans span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin-right: 5px;
+}
+.bullets .spans span.on {
+  background-color: #0075ff;
+}
+
+.result {
+  font-weight: bold;
+}
+.result .perfect {
+  color: #0075ff;
+}
+.result .bad {
+  color: #dc0a0a;
+}
+.result .good {
+  color: #009688;
+}
+.countdown {
+  text-align: right;
+  margin-top: 15px;
+}
